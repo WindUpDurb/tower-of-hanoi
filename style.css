@@ -3,6 +3,13 @@ html, body {
     padding:0;
     height:100%;
 }
+#disk1 {
+    width: 50%;
+}
+
+#disk2 {
+    width: 75%;
+}
 
 .disk {
     height: 50px;
@@ -32,5 +39,5 @@ html, body {
 }
 
 .selectedDisk {
-    border: 1px solid sandybrown;
+    border: 2px solid sandybrown;
 }
