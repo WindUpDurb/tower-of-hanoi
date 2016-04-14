@@ -14,7 +14,7 @@ let toggleSelect = function (selectedDisk) {
 
 //disk move function
 let diskMove = function () {
-    
+
     $(".tower").click(function(event) {
         //target first disks in tower
         var disk = $(this).find(".disk").first();
