@@ -15,10 +15,9 @@ let toggleSelect = function (selectedDisk) {
     };
 };
 
-//disk move function
+//disk movement function
 let diskMove = function () {
-
-    $(".tower").click(function(event) {
+    $(".tower").click(function() {
         //target first disks in tower
         var disk = $(this).find(".disk").first();
         //disk with .selectedDisk
@@ -47,30 +46,24 @@ let diskMove = function () {
             //remove the class so user chooses again
             selectedDisk.toggleClass("selectedDisk");
         }
-
-
     })
 };
 
 //update the tower data so that if the disk data-size is larger, it can move there.
 let changeTowerData = function (targetTower) {
     var towerData = 0
-   targetTower.children().each(function (i) {
+   targetTower.children().each(function () {
         towerData += $(this).data("size")
     });
     targetTower.data("size", towerData);
 };
 
-
+//wind game condition
 let winGame = function () {
     var winningTower = $("#placeHere3").data("size");
     if (winningTower === 10) {
-        alert("You win");
+        alert("You win!!");
     };
 };
-
-
-
-
 
 $(document).ready(initialize);

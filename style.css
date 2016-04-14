@@ -2,6 +2,7 @@ html, body {
     margin:0;
     padding:0;
     height:100%;
+    text-align: center;
 }
 #disk1 {
     width: 50%;
@@ -13,8 +14,9 @@ html, body {
 
 .disk {
     height: 50px;
-    background-color: yellow;
-    margin: 5px;
+    background-color: #800000;
+    border: 1px solid black;
+    margin: auto;
     bottom: 0;
     display: block;
     position: relative;
@@ -31,13 +33,14 @@ html, body {
 }
 
 .innerTower {
+
     position: absolute;
     bottom: 0;
     width: 100%;
     height: auto;
-    background-color: red;
+    background-color: teal;
 }
 
 .selectedDisk {
-    border: 2px solid sandybrown;
+    border: 3px solid yellow;
 }
