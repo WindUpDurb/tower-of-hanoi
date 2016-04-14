@@ -1,0 +1,36 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+.disk {
+    height: 50px;
+    background-color: yellow;
+    margin: 5px;
+    bottom: 0;
+    display: block;
+
+}
+
+
+.tower {
+    background-color: teal;
+    display: inline-block;
+    height: 80%;
+    margin: 5px;
+    width: 30%;
+    position: relative;
+}
+
+.innerTower {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 150px;
+    background-color: red;
+}
+
+.selectedDisk {
+    border: 1px solid sandybrown;
+}
