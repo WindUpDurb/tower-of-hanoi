@@ -1,9 +1,9 @@
 
 let initialize = function () {
     diskMove();
-    changeTowerData($("#placeHere1"))
-    changeTowerData($("#placeHere2"))
-    changeTowerData($("#placeHere3"))
+    changeTowerData($("#placeHere1"));
+    changeTowerData($("#placeHere2"));
+    changeTowerData($("#placeHere3"));
 };
 
 //function to toggle disk select
@@ -58,7 +58,7 @@ let changeTowerData = function (targetTower) {
     targetTower.data("size", towerData);
 };
 
-//wind game condition
+//win game condition
 let winGame = function () {
     var winningTower = $("#placeHere3").data("size");
     if (winningTower === 10) {
